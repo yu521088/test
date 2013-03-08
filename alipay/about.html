@@ -111,7 +111,7 @@
 <script src="./slide.js"></script>
 <script style="text/javascript" charset="utf-8">
 $(document).ready(function(){
-	$('#slideShowList').slideShow({gap:'3000',dir:'ltr',speed:'fast',callback:function(index){
+	$('#slideShowList').slideShow({gap:'2000',dir:'ltr',speed:'1000',callback:function(index){
 		$('.slideControl').removeClass('currentControl').eq(index).addClass('currentControl');
 	}});
 	
