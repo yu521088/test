@@ -25,6 +25,10 @@ You can visit my social network to get connect with me:
 * [微博](http://weibo.com/zachen/)
 * [人人](http://www.renren.com/234177386/profile/)
 
+I like Nike's slogan:
+> Just Do It!
+-
+
 ####3 TODO list
 - [ ] pull a request
 - [ ] add image(Format: `![Alt Text](url here)`) and links(Format: `[Link Text](url here)`):
