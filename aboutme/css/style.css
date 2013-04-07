@@ -13,6 +13,49 @@ body{
 	height:100%;
 	overflow:hidden;
 }
+a{
+	color:white;
+}
+
+/*common css*/
+.tabs{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top: 0;
+	overflow: auto;
+	background: #FF8B30;
+}
+.tabWrapper {
+	width: 940px;
+	margin: 0 auto;
+	margin-top: 150px;
+}
+::selection {
+	background: #FF4215;
+	color: yellow;
+}
+::-webkit-scrollbar {
+	width: 13px;
+}
+::-webkit-scrollbar-thumb {
+	background-clip: padding-box;
+	min-height: 28px;
+	background: #09C;
+	border-left: 1px solid #6F0200;
+}
+::-webkit-scrollbar-track-piece {
+	background: black;
+	border-left: 1px solid black;
+}
+.floatLeft{
+	float:left;
+}
+.floatRight{
+	float:right;
+}
+
+/*navigation css*/
 #nav{
 	width: 960px;
 	margin: 0 auto;
@@ -26,9 +69,38 @@ body{
 #logoLink {
 	margin-left: 50px;
 }
+@keyframes logo-in{
+	0%	{opacity:0;transform:translate(0px,-50px);}
+	25%	{opacity:0.5;transform:translate(0px,0);}
+	45%	{opacity:0.7;transform:translate(0px,-20px);}
+	100% {opacity:1;transform:translate(0,0);}
+}
+@-webkit-keyframes logo-in{
+	0%	{opacity:0;-webkit-transform:translate(0px,-50px);}
+	25%	{opacity:0.5;-webkit-transform:translate(0px,0);}
+	45%	{opacity:0.7;-webkit-transform:translate(0px,-20px);}
+	100% {opacity:1;-webkit-transform:translate(0,0);}
+}
+@-moz-keyframes logo-in{
+	0%	{opacity:0;-moz-transform:translate(0px,-50px);}
+	25%	{opacity:0.5;-moz-transform:translate(0px,0);}
+	45%	{opacity:0.7;-moz-transform:translate(0px,-20px);}
+	100% {opacity:1;-moz-transform:translate(0,0);}
+}
+@-o-keyframes logo-in{
+	0%	{opacity:0;-o-transform:translate(0px,-50px);}
+	25%	{opacity:0.5;-o-transform:translate(0px,0);}
+	45%	{opacity:0.7;-o-transform:translate(0px,-20px);}
+	100% {opacity:1;-o-transform:translate(0,0);}
+}
 #logoImage{
 	width:140px;
 	height:140px;
+	animation:logo-in .8s ease-in forwards;
+	-webkit-animation:logo-in .8s ease-in forwards;
+	-moz-animation:logo-in .8s ease-in forwards;
+	-o-animation:logo-in .8s ease-in forwards;
+	opacity:0;
 }
 #navList{
 	float:right;
@@ -41,40 +113,90 @@ body{
 	padding: 15px 40px;
 	display: inline-block;
 	background: black;
+	position: relative;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #E70000;
+	color: white;
+	-webkit-transition: all ease-out .3s;
 	font-size: 1.1em;
 	text-shadow: 1px 1px 1px #8B8B8B;
 }
 .navItem:hover {
-	background: #333;
+	background: #D1D1D1;
+	color:#E70000;
+	top: -5px;
 }
-.tabs{
-	width:100%;
-	height:100%;
-	position:absolute;
-	top: 0;
-	overflow: auto;
-	background: #FF8B30;
-}
+
+/*home tab css*/
 #homeTab{
 	left:0;
 }
+.footer {
+background: black;
+color: white;
+font-family: calibri;
+padding: 40px;
+overflow: hidden;
+zoom: 1;
+height: 180px;
+}
+.column {
+float: left;
+padding-left: 10px;
+border-left: 1px dotted #424242;
+height: 100%;
+width:220px;
+line-height: 30px;
+}
+.column p {
+font-size: 20px;
+font-weight: bold;
+}
+.siteTip {
+font-size: 13px;
+border-radius: 5px;
+padding: 4px;
+background: #FF2C2C;
+position:relative;
+margin-left: 10px;
+opacity:0;
+}
+li:hover .siteTip{
+	-webkit-animation:showTip .4s ease-in forwards;
+}
+@-webkit-keyframes showTip{
+	from {opacity:0;-webkit-transform:translate(50px,0);}
+	to {opacity:1;-webkit-transform:translate(0,0);}
+}
+.tipArrow {
+border: 6px solid #FF2C2C;
+position: absolute;
+left: -11px;
+top: 5px;
+display: inline-block;
+width: 0;
+height: 0;
+border-left-color: transparent;
+border-bottom-color: transparent;
+border-top-color: transparent;
+}
+
+/*bike tab css*/
 #bikeTab{
 	left:100%;
 }
+
+/*music tab css*/
 #musicTab{
 	left:200%;
 }
+
+/*blank tab css*/
 #blankTab{
 	left:300%;
 }
+
+/*blank2 tab css*/
 #blankTab2{
 	left:400%;
-}
-.tabWrapper {
-	width: 940px;
-	margin: 0 auto;
-	margin-top: 150px;
 }
