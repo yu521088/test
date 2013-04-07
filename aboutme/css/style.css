@@ -1,0 +1,80 @@
+/*reset css*/
+*,body,p,div,ul,li,ol,a,article,aside,h1,h2,h3,h4,h5,h6{
+	text-decoration:none;
+	border:none;
+	padding:0;
+	margin:0;
+}
+ul,ol{
+	list-style:none;
+}
+body{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+#nav{
+	width: 960px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	box-shadow: 0 0 10px black;
+	position: relative;
+	z-index: 9;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+#logoLink {
+	margin-left: 50px;
+}
+#logoImage{
+	width:140px;
+	height:140px;
+}
+#navList{
+	float:right;
+	margin-top: 50px;
+}
+.navLi{
+	float:left;
+}
+.navItem {
+	padding: 15px 40px;
+	display: inline-block;
+	background: black;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #E70000;
+	font-size: 1.1em;
+	text-shadow: 1px 1px 1px #8B8B8B;
+}
+.navItem:hover {
+	background: #333;
+}
+.tabs{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top: 0;
+	overflow: auto;
+	background: #FF8B30;
+}
+#homeTab{
+	left:0;
+}
+#bikeTab{
+	left:100%;
+}
+#musicTab{
+	left:200%;
+}
+#blankTab{
+	left:300%;
+}
+#blankTab2{
+	left:400%;
+}
+.tabWrapper {
+	width: 940px;
+	margin: 0 auto;
+	margin-top: 150px;
+}
