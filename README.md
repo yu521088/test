@@ -18,8 +18,6 @@ In this project, i put a directoty which contains a simple practise page that di
 ####2 Self Introduction
 My name is **Zac**, lives in *Hangzhou, China*, here is a picture of me: 
 
-![Zac](https://secure.gravatar.com/avatar/5c227e952cf768c49cee40076b896808?s=420&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png).
-
 You can visit my social network to get connect with me:
 * [我的博客](http://lovecicy.com/)
 * [微博](http://weibo.com/zachen/)
