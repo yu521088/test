@@ -16,7 +16,7 @@ In this project, i put a directoty which contains a simple practise page that di
 ```
 
 ####2 Self Introduction
-My name is **Zac**, lives in *Hangzhou, China*, here is a picture of me: 
+My name is **Zac**, lives in *Hangzhou, China*: 
 
 You can visit my social network to get connect with me:
 * [我的博客](http://lovecicy.com/)
