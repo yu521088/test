@@ -456,7 +456,6 @@ border-top-color: transparent;
 	left:200%;
 }
 #album {
-	text-align: center;
 	overflow: hidden;
 	position:relative;
 }
@@ -468,6 +467,16 @@ border-top-color: transparent;
 	opacity: .5;
 	filter: alpha(opacity=50);
 	display: none;
+}
+#album_detail{
+	position: absolute;
+	display: none;
+}
+#singer_img{
+	width:300px;
+	min-height:100px;
+	opacity: 1;
+	filter: alpha(opacity=100);
 }
 .album_column {
 	width: 220px;

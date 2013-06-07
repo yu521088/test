@@ -51,8 +51,12 @@ $(function(){
 	});
 	$('#album').delegate('.musicImg','click',function(){
 		$('#album_block').css('display','block');
+		$('#album_detail').css('display','block');
+		$('#singer_img').attr('src',$(this).attr('src'));
+		$('#singer_brief').html($(this).attr('alt'));
 	}).delegate('#album_block','click',function(){
 		$(this).css('display','none');
+		$('#album_detail').css('display','none');
 	});
 	setInterval(function(){
 		var sTop = $('.activeClass').scrollTop();
