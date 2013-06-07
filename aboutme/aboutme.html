@@ -5,19 +5,20 @@
 <title>About Y_C</title>
 <link rel="stylesheet" rev="stylesheet" href="css/style.css" type="text/css" media="all"/>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="scripts/jquery.stellar.min.js"></script>
 </head>
 <body>
 	<div id="nav">
 		<a id="logoLink" href="http://lovecicy.com/"><img src="images/cy.png" id="logoImage" title="Lovecicy"/></a>
 		<ul id="navList">
-			<li class="navLi"><a href="#" data-tab="homeTab" class="navItem">home</a></li>
-			<li class="navLi"><a href="#" data-tab="bikeTab" class="navItem">bike</a></li>
-			<li class="navLi"><a href="#" data-tab="musicTab" class="navItem">music</a></li>
-			<li class="navLi"><a href="#" data-tab="blankTab" class="navItem">blank</a></li>
-			<li class="navLi"><a href="#" data-tab="blankTab2" class="navItem">blank</a></li>
+			<li class="navLi"><a href="#home" data-tab="homeTab" class="navItem">home</a></li>
+			<li class="navLi"><a href="#bike" data-tab="bikeTab" class="navItem">bike</a></li>
+			<li class="navLi"><a href="#music" data-tab="musicTab" class="navItem">music</a></li>
+			<li class="navLi"><a href="#blank" data-tab="blankTab" class="navItem">blank</a></li>
+			<li class="navLi"><a href="#blank2" data-tab="blankTab2" class="navItem">blank2</a></li>
 		</ul>
 	</div>
-	<div id="homeTab" class="tabs">
+	<div id="homeTab" class="tabs activeClass">
 		<div class="tabWrapper">
 			<h1>This is all about Y_C</h1>
 			<h1>This is all about Y_C</h1>
@@ -46,27 +47,27 @@
 				<div class="column">
 				<p>Sites</p>
 				<ul>
-					<li><a href="#">爱范儿</a><span class="siteTip"><span class="tipArrow"></span>小众科技博客</span></li>
-					<li><a href="#">劈柴院</a><span class="siteTip"><span class="tipArrow"></span>我的博客啊</span></li>
-					<li><a href="#">豆瓣电台</a><span class="siteTip"><span class="tipArrow"></span>听歌的地方</span></li>
+					<li><a href="http://ifanr.com" target="_blank">爱范儿</a><span class="siteTip"><span class="tipArrow"></span>小众科技博客</span></li>
+					<li><a href="http://lovecicy.com" target="_blank">劈柴院</a><span class="siteTip"><span class="tipArrow"></span>我的博客啊</span></li>
+					<li><a href="http://douban.fm" target="_blank">豆瓣电台</a><span class="siteTip"><span class="tipArrow"></span>听歌的地方</span></li>
 				</ul>
 				</div>
 				<div class="column">
 				<p>Social</p>
 				<ul>
-					<li><a href="#">新浪微博</a><span class="siteTip"><span class="tipArrow"></span>@YuC_C</span></li>
-					<li><a href="#">腾讯微博</a><span class="siteTip"><span class="tipArrow"></span>常年没用</span></li>
-					<li><a href="#">人人网</a><span class="siteTip"><span class="tipArrow"></span>也好久没用了</span></li>
-					<li><a href="#">微信</a><span class="siteTip"><span class="tipArrow"></span>ZaChen</span></li>
-					<li><a href="#">facebook</a><span class="siteTip"><span class="tipArrow"></span>就翻墙看看</span></li>
+					<li><a href="http://weibo.com/zachen" target="_blank">新浪微博</a><span class="siteTip"><span class="tipArrow"></span>@YuC_C</span></li>
+					<li><a href="javascript:;">腾讯微博</a><span class="siteTip"><span class="tipArrow"></span>常年没用</span></li>
+					<li><a href="javascript:;">人人网</a><span class="siteTip"><span class="tipArrow"></span>也好久没用了</span></li>
+					<li><a href="javascript:;">微信</a><span class="siteTip"><span class="tipArrow"></span>ZaChen</span></li>
+					<li><a href="http://facebook.com" target="_blank">facebook</a><span class="siteTip"><span class="tipArrow"></span>就翻墙看看</span></li>
 				</ul>
 				</div>
 				<div class="column">
 				<p>About</p>
 				<ul>
-					<li><a href="#">广告</a><span class="siteTip"><span class="tipArrow"></span>求收入</span></li>
-					<li><a href="#">友情链接</a><span class="siteTip"><span class="tipArrow"></span>求链接</span></li>
-					<li><a href="#">捐助</a><span class="siteTip"><span class="tipArrow"></span>求包养</span></li>
+					<li><a href="javascript:;">广告</a><span class="siteTip"><span class="tipArrow"></span>求收入</span></li>
+					<li><a href="javascript:;">友情链接</a><span class="siteTip"><span class="tipArrow"></span>求链接</span></li>
+					<li><a href="https://me.alipay.com/yuuuuc" target="_blank">捐助</a><span class="siteTip"><span class="tipArrow"></span>求包养</span></li>
 				</ul>
 				</div>
 			</div>
@@ -76,10 +77,90 @@
 		<div class="tabWrapper">
 			<h1>I am loving it!</h1>
 		</div>
+			<div id="bikeSlide" data-stellar-ratio=".5">
+				<div class="viewsWrapper viewImage1">
+					<img class="img200" src="images/view.jpg" alt=""/>
+					<p class="imageBrief">油菜花</p>
+				</div>
+				<div class="viewsWrapper viewImage2">
+					<img class="img200" src="images/view2.jpg" alt=""/>
+					<p class="imageBrief">桃花？</p>
+				</div>
+				<div class="viewsWrapper viewImage3">
+					<img class="img200" src="images/view3.jpg" alt=""/>
+					<p class="imageBrief">径山脚下的水潭</p>
+				</div>
+				<div class="viewsWrapper viewImage4">
+					<img class="img200" src="images/view4.jpg" alt=""/>
+					<p class="imageBrief">龙潭水库</p>
+				</div>
+				<div class="viewsWrapper viewImage5">
+					<img class="img200" src="images/view5.jpg" alt=""/>
+					<p class="imageBrief">小花</p>
+				</div>
+				<div class="viewsWrapper viewImage6">
+					<img class="img200" src="images/view6.jpg" alt=""/>
+					<p class="imageBrief">蓝天啦！</p>
+				</div>
+			</div>
+			<div id="bikeSlide2" data-stellar-ratio="5">
+				<div class="viewsWrapper viewImage1">
+					<img class="img200" src="images/bikes.jpg" alt=""/>
+					<p class="imageBrief">累趴下了</p>
+				</div>
+				<div class="viewsWrapper viewImage2">
+					<img class="img200" src="images/bikes2.jpg" alt=""/>
+					<p class="imageBrief">天色渐暗</p>
+				</div>
+				<div class="viewsWrapper viewImage3">
+					<img class="img200" src="images/bikes3.jpg" alt=""/>
+					<p class="imageBrief">cicy的爱车</p>
+				</div>
+				<div class="viewsWrapper viewImage4">
+					<img class="img200" src="images/bikes4.jpg" alt=""/>
+					<p class="imageBrief">径山脚下</p>
+				</div>
+				<div class="viewsWrapper viewImage5">
+					<img class="img200" src="images/bikes5.jpg" alt=""/>
+					<p class="imageBrief">径山茶公园</p>
+				</div>
+				<div class="viewsWrapper viewImage6">
+					<img class="img200" src="images/bikes6.jpg" alt=""/>
+					<p class="imageBrief">游客帮拍的，还好心的多拍了几张，结果每张都这样，次奥</p>
+				</div>
+			</div>
 	</div>
 	<div id="musicTab" class="tabs">
 		<div class="tabWrapper">
 			<h1>You are the music in me!</h1>
+			<div id="album">
+				<div class="album_column">
+					<img class="musicImg" src="http://sc.sinaimg.cn/2010/0426/20104268837.jpg" alt="张震岳"/>
+					<img class="musicImg" src="http://cheeseweb.eu/wp-content/uploads/2009/07/maroon5.jpg" alt="Maroon 5"/>
+					<img class="musicImg" src="http://ent.people.com.cn/mediafile/200509/21/F2005092116364600000.jpg" alt="梁静茹"/>
+					<img class="musicImg" src="http://photocdn.sohu.com/20090107/Img261621872.jpg" alt="王力宏"/>
+				</div>
+				<div class="album_column">
+					<img class="musicImg" src="http://cimg2.163.com/photo/0003/2007-04-12/3BSU3L6O0BOf0003.jpg" alt="艾薇儿"/>
+					<img class="musicImg" src="http://images.fanpop.com/images/image_uploads/high-school-musical-2-high-school-musical-164541_800_600.jpg" alt="High School Musical"/>
+					<img class="musicImg" src="http://wallpapershdgallery.com/wp-content/uploads/Alizee-wallpapers-HD-2013-745x596.jpeg" alt="Alizee"/>
+					<img class="musicImg" src="http://www.mtyyw.com/wp-content/uploads/2009/11/niunaikafei.jpg" alt="牛奶@咖啡"/>
+				</div>
+				<div class="album_column">
+					<img class="musicImg" src="http://blog.5d.cn/vip/booboo/upload/2004-08/5_537.jpg" alt="周杰伦"/>
+					<img class="musicImg" src="http://airagurl.com/wp-content/uploads/2013/05/swift-taylor-14.jpg" alt="Taylor Swift"/>
+					<img class="musicImg" src="http://www.albumcovers.biz/cover/2012/tata-young-i-believe.jpg" alt="Tata Young"/>
+					<img class="musicImg" src="http://a2.att.hudong.com/50/01/01000000000000119090151138150_s.jpg" alt="岩田さゆり"/>
+				</div>
+				<div class="album_column">
+					<img class="musicImg" src="http://img.tv.cctv.com/image/20090909/IMAG1252458572341445.jpg" alt="蔡依林"/>
+					<img class="musicImg" src="http://pic.pimg.tw/qma09823/1362041893-3036146125.jpg" alt="自由发挥"/>
+					<img class="musicImg" src="http://www.chinatownconnection.com/images/she.jpg" alt="SHE"/>
+					<img class="musicImg" src="http://images4.fanpop.com/image/photos/24100000/kesha-kesha-vs-katy-perry-24136312-600-822.jpg" alt="Ke$ha"/>
+					<img class="musicImg" src="http://img3.yxlady.com/uploads/intro/20120601/1111210.jpg" alt="陈奕迅"/>
+				</div>
+				<div id="album_block"><img id="singer_img" src="" style="width:100px;height:100px;"/><span id="singer_brief"></span></div>
+			</div>
 		</div>
 	</div>
 	<div id="blankTab" class="tabs">
@@ -91,6 +172,10 @@
 		<div class="tabWrapper">
 			<h1>Nothing is here now</h1>
 		</div>
+	</div>
+	<div id="modelBg" class="hidden"></div>
+	<div id="model" class="hidden">
+		<image src="images/cy.png" id="modelImage"/>
 	</div>
 	<script src="scripts/aboutme.js"></script>
 </body>

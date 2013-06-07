@@ -23,6 +23,9 @@ a{
 }
 
 /*common css*/
+.hidden{
+	display:none;
+}
 .tabs{
 	width:100%;
 	height:100%;
@@ -60,6 +63,16 @@ a{
 .floatRight{
 	float:right;
 }
+.img200{
+	width:200px;
+}
+.viewsWrapper {
+	padding: 10px;
+	background: white;
+	width: 200px;
+	position: absolute;
+	cursor:pointer;
+}
 
 /*navigation css*/
 #nav{
@@ -71,9 +84,12 @@ a{
 	z-index: 9;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
+	position:fixed;
 }
 #logoLink {
-	margin-left: 50px;
+	right: 50px;
+	position: absolute;
+	bottom: 17px;
 }
 @keyframes logo-in{
 	0%	{opacity:0;transform:translate(0px,-50px);}
@@ -100,17 +116,27 @@ a{
 	100% {opacity:1;-o-transform:translate(0,0);}
 }
 #logoImage{
-	width:140px;
-	height:140px;
+	width:80px;
+	height:80px;
 	animation:logo-in .8s ease-in forwards;
 	-webkit-animation:logo-in .8s ease-in forwards;
 	-moz-animation:logo-in .8s ease-in forwards;
 	-o-animation:logo-in .8s ease-in forwards;
+	transition:margin-bottom .2s;
+	-webkit-transition:margin-bottom .2s;
+	-moz-transition:margin-bottom .2s;
+	-o-transition:margin-bottom .2s;
 	opacity:0;
 }
+#logoImage:hover{
+	margin-bottom:5px;
+}
 #navList{
-	float:right;
+	float: right;
 	margin-top: 50px;
+	width: 960px;
+	margin-bottom: 20px;
+	background: black;
 }
 .navLi{
 	float:left;
@@ -123,20 +149,23 @@ a{
 	text-transform: uppercase;
 	font-weight: bold;
 	color: white;
+	transition: all ease-out .3s;
 	-webkit-transition: all ease-out .3s;
+	-moz-transition: all ease-out .3s;
+	-o-transition: all ease-out .3s;
 	font-size: 1.1em;
 	text-shadow: 1px 1px 1px #8B8B8B;
 }
 .navItem:hover {
 	background: #D1D1D1;
 	color:#E70000;
-	top: -5px;
+	/*top: -5px;*/
 }
 
 /*home tab css*/
 #homeTab{
 	left:0;
-	background: #FFF;
+	background: #F8F8F8;
 }
 .footer {
 background: black;
@@ -214,19 +243,273 @@ border-top-color: transparent;
 /*bike tab css*/
 #bikeTab{
 	background: #C3FFE2;
+	left:100%;
+}
+#bikeSlide,#bikeSlide2{
+	width:100%;
+	height:1000px;
+	position:relative;
+}
+#bikeSlide{
+	background:url('../images/bg1.jpg') no-repeat fixed;
+	background-size:100% 100%;
+}
+.viewImage1{
+	left: 450px;
+	top: 280px;
+	transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	-o-transform: rotate(30deg);
+}
+#bikeSlide:hover .viewImage1,
+#bikeSlide2:hover .viewImage1{
+	animation:viewImage1 .5s ease-in forwards;
+	-webkit-animation:viewImage1 .5s ease-in forwards;
+	-moz-animation:viewImage1 .5s ease-in forwards;
+	-o-animation:viewImage1 .5s ease-in forwards;
+}
+@keyframes viewImage1{
+	0% {left:450px;top:280px;}
+	100% {left:100px;top:100px;}
+}
+@-webkit-keyframes viewImage1{
+	0% {left:450px;top:280px;}
+	100% {left:100px;top:100px;}
+}
+@-moz-keyframes viewImage1{
+	0% {left:450px;top:280px;}
+	100% {left:100px;top:100px;}
+}
+@-o-keyframes viewImage1{
+	0% {left:450px;top:280px;}
+	100% {left:100px;top:100px;}
+}
+.viewImage2{
+	right: 300px;
+	top: 400px;
+	transform: rotate(60deg);
+	-webkit-transform: rotate(60deg);
+	-moz-transform: rotate(60deg);
+	-o-transform: rotate(60deg);
+}
+#bikeSlide:hover .viewImage2,
+#bikeSlide2:hover .viewImage2{
+	animation:viewImage2 .5s ease-in forwards;
+	-webkit-animation:viewImage2 .5s ease-in forwards;
+	-moz-animation:viewImage2 .5s ease-in forwards;
+	-o-animation:viewImage2 .5s ease-in forwards;
+}
+@keyframes viewImage2{
+	0% {right:300px;top:400px;transform: rotate(60deg);}
+	100% {right:200px;top:150px;transform: rotate(-20deg);}
+}
+@-webkit-keyframes viewImage2{
+	0% {right:300px;top:400px;-webkit-transform: rotate(60deg);}
+	100% {right:200px;top:150px;-webkit-transform: rotate(-20deg);}
+}
+@-moz-keyframes viewImage2{
+	0% {right:300px;top:400px;-moz-transform: rotate(60deg);}
+	100% {right:200px;top:150px;-moz-transform: rotate(-20deg);}
+}
+@-o-keyframes viewImage2{
+	0% {right:300px;top:400px;-o-transform: rotate(60deg);}
+	100% {right:200px;top:150px;-o-transform: rotate(-20deg);}
+}
+.viewImage3{
+	left: 500px;
+	top: 300px;
+	transform: rotate(-50deg);
+	-webkit-transform: rotate(-50deg);
+	-moz-transform: rotate(-50deg);
+	-o-transform: rotate(-50deg);
+}
+#bikeSlide:hover .viewImage3,
+#bikeSlide2:hover .viewImage3{
+	animation:viewImage3 .3s ease-in-out .3s forwards;
+	-webkit-animation:viewImage3 .3s ease-in-out .3s forwards;
+	-moz-animation:viewImage3 .3s ease-in-out .3s forwards;
+	-o-animation:viewImage3 .3s ease-in-out .3s forwards;
+}
+@keyframes viewImage3{
+	0% {left:500px;top:300px;transform: rotate(-50deg);}
+	100% {left:250px;top:550px;transform: rotate(10deg);}
+}
+@-webkit-keyframes viewImage3{
+	0% {left:500px;top:300px;-webkit-transform: rotate(-50deg);}
+	100% {left:250px;top:550px;-webkit-transform: rotate(10deg);}
+}
+@-moz-keyframes viewImage3{
+	0% {left:500px;top:300px;-moz-transform: rotate(-50deg);}
+	100% {left:250px;top:550px;-moz-transform: rotate(10deg);}
+}
+@-o-keyframes viewImage3{
+	0% {left:500px;top:300px;-o-transform: rotate(-50deg);}
+	100% {left:250px;top:550px;-o-transform: rotate(10deg);}
+}
+.viewImage4{
+	left: 400px;
+	bottom: 250px;
+	transform: rotate(50deg);
+	-webkit-transform: rotate(50deg);
+	-moz-transform: rotate(50deg);
+	-o-transform: rotate(50deg);
+}
+#bikeSlide:hover .viewImage4,
+#bikeSlide2:hover .viewImage4{
+	animation:viewImage4 .8s .2s forwards;
+	-webkit-animation:viewImage4 .8s .2s forwards;
+	-moz-animation:viewImage4 .8s .2s forwards;
+	-o-animation:viewImage4 .8s .2s forwards;
+}
+@keyframes viewImage4{
+	0% {left:400px;bottom:250px;transform:rotate(-50deg);}
+	50% {left:550px;bottom:350px;transform:rotate(50deg);}
+	100% {left:400px;bottom:450px;transform:rotate(-20deg);}
+}
+@-webkit-keyframes viewImage4{
+	0% {left:400px;bottom:250px;-webkit-transform:rotate(-50deg);}
+	50% {left:550px;bottom:350px;-webkit-transform:rotate(50deg);}
+	100% {left:400px;bottom:450px;-webkit-transform:rotate(-20deg);}
+}
+@-moz-keyframes viewImage4{
+	0% {left:400px;bottom:250px;-moz-transform:rotate(-50deg);}
+	50% {left:550px;bottom:350px;-moz-transform:rotate(50deg);}
+	100% {left:400px;bottom:450px;-moz-transform:rotate(-20deg);}
+}
+@-o-keyframes viewImage4{
+	0% {left:400px;bottom:250px;-o-transform:rotate(-50deg);}
+	50% {left:550px;bottom:350px;-o-transform:rotate(50deg);}
+	100% {left:400px;bottom:450px;-o-transform:rotate(-20deg);}
+}
+.viewImage5{
+	right: 400px;
+	bottom: 300px;
+	transform: rotate(50deg);
+	-webkit-transform: rotate(50deg);
+	-moz-transform: rotate(50deg);
+	-o-transform: rotate(50deg);
+}
+#bikeSlide:hover .viewImage5,
+#bikeSlide2:hover .viewImage5{
+	animation:viewImage5 .5s .3s forwards;
+	-webkit-animation:viewImage5 .5s .3s forwards;
+	-moz-animation:viewImage5 .5s .3s forwards;
+	-o-animation:viewImage5 .5s .3s forwards;
+}
+@keyframes viewImage5{
+	0% {transform:rotate(50deg);}
+	100% {transform:rotate(-30deg);}
+}
+@-webkit-keyframes viewImage5{
+	0% {-webkit-transform:rotate(50deg);}
+	100% {-webkit-transform:rotate(-30deg);}
+}
+@-moz-keyframes viewImage5{
+	0% {-moz-transform:rotate(50deg);}
+	100% {-moz-transform:rotate(-30deg);}
+}
+@-o-keyframes viewImage5{
+	0% {-o-transform:rotate(50deg);}
+	100% {-o-transform:rotate(-30deg);}
+}
+.viewImage6{
+	right: 300px;
+	bottom: 200px;
+	transform: rotate(-30deg);
+	-webkit-transform: rotate(-30deg);
+	-moz-transform: rotate(-30deg);
+	-o-transform: rotate(-30deg);
+}
+#bikeSlide:hover .viewImage6,
+#bikeSlide2:hover .viewImage6{
+	animation:viewImage6 .5s forwards;
+	-webkit-animation:viewImage6 .5s forwards;
+	-moz-animation:viewImage6 .5s forwards;
+	-o-animation:viewImage6 .5s forwards;
+}
+@keyframes viewImage6{
+	0% {right:300px;bottom:200px;transform:rotate(-30deg);}
+	100% {right:100px;bottom:100px;transform:rotate(30deg);}
+}
+@-webkit-keyframes viewImage6{
+	0% {right:300px;bottom:200px;-webkit-transform:rotate(-30deg);}
+	100% {right:100px;bottom:100px;-webkit-transform:rotate(30deg);}
+}
+@-moz-keyframes viewImage6{
+	0% {right:300px;bottom:200px;-moz-transform:rotate(-30deg);}
+	100% {right:100px;bottom:100px;-moz-transform:rotate(30deg);}
+}
+@-o-keyframes viewImage6{
+	0% {right:300px;bottom:200px;-o-transform:rotate(-30deg);}
+	100% {right:100px;bottom:100px;-o-transform:rotate(30deg);}
+}
+#bikeSlide2{
+	background:url('../images/bike.jpg') no-repeat fixed;
+	background-size:100% 100%;
+	background-position-x: 50%;
 }
 
 /*music tab css*/
 #musicTab{
 	background: #ECFFC3;
+	left:200%;
+}
+#album {
+	text-align: center;
+	overflow: hidden;
+	position:relative;
+}
+#album_block{
+	position: absolute;
+	background: #000;
+	width: 100%;
+	height: 100%;
+	opacity: .5;
+	filter: alpha(opacity=50);
+	display: none;
+}
+.album_column {
+	width: 220px;
+	margin-left: 15px;
+	float: left;
+}
+.musicImg {
+	border: 5px solid #FFF;
+	display: inline-block;
+	width: 210px;
+	margin-bottom: 3px;
+	min-height:100px;
+	background:#fff;
+	cursor:pointer;
 }
 
 /*blank tab css*/
 #blankTab{
 	background: #C3D6FF;
+	left:300%;
 }
 
 /*blank2 tab css*/
 #blankTab2{
 	background: #FFE8E8;
+	left:400%;
+}
+
+/* model */
+#modelBg{
+	position:fixed;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	z-index:9998;
+}
+#model{
+	position:fixed;
+	padding:5px;
+	z-index:9999;
+	background: whiteSmoke;
+}
+#modelImage{
+	width:500px;
 }
