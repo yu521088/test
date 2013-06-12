@@ -160,9 +160,12 @@ a{
 	font-size: 1.1em;
 	text-shadow: 1px 1px 1px #8B8B8B;
 }
-.navItem:hover {
+.navLi:hover .navItem {
 	background: #D1D1D1;
 	color:#E70000;
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
 	/*top: -5px;*/
 }
 
