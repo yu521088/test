@@ -60,7 +60,7 @@ $(function(){
 	});
 	setInterval(function(){
 		var sTop = $('.activeClass').scrollTop();
-		if(sTop>150){
+		if(sTop>10){
 			var nHeight = $('#nav').outerHeight(true);
 			//$('#nav').stop().animate({'margin-top':'-121px'},300);
 			$('#nav').css({'margin-top':'-121px'});

@@ -21,6 +21,9 @@ body{
 a{
 	color:white;
 }
+.bold{
+	font-weight:bold;
+}
 
 /*common css*/
 .hidden{
@@ -78,12 +81,11 @@ a{
 #nav{
 	width: 960px;
 	margin: 0 auto;
-	background: #FFFFFF;
-	box-shadow: 0 0 10px black;
+	/*background: #FFFFFF;
+	box-shadow: 0 0 10px black;*/
 	position: relative;
 	z-index: 9;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+	border-bottom: 5px solid #F00;
 	position:fixed;
 }
 #logoLink {
@@ -99,8 +101,10 @@ a{
 }
 @-webkit-keyframes logo-in{
 	0%	{opacity:0;-webkit-transform:translate(0px,-50px);}
-	25%	{opacity:0.5;-webkit-transform:translate(0px,0);}
-	45%	{opacity:0.7;-webkit-transform:translate(0px,-20px);}
+	20%	{opacity:0.5;-webkit-transform:translate(0px,0px);}
+	40%	{opacity:0.5;-webkit-transform:translate(0px,-30px);}
+	60%	{opacity:0.7;-webkit-transform:translate(0px,0px);}
+	80%	{opacity:0.7;-webkit-transform:translate(0px,-10px);}
 	100% {opacity:1;-webkit-transform:translate(0,0);}
 }
 @-moz-keyframes logo-in{
@@ -136,7 +140,7 @@ a{
 	margin-top: 50px;
 	width: 960px;
 	margin-bottom: 20px;
-	background: black;
+	/*background: black;*/
 }
 .navLi{
 	float:left;
@@ -144,7 +148,7 @@ a{
 .navItem {
 	padding: 15px 40px;
 	display: inline-block;
-	background: black;
+	/*background: black;*/
 	position: relative;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -165,45 +169,67 @@ a{
 /*home tab css*/
 #homeTab{
 	left:0;
-	background: #F8F8F8;
+	background: url('../images/tile_fallback.png') repeat #F8F8F8;
+}
+.selfBrief{
+	padding-left: 280px;
+	padding-bottom: 50px;
+}
+.selfBrief span{
+	background:red;
+	color:yellow;
+	display:inline-block;
+	margin-right:2px;
+	margin-bottom:2px;
+	font-size:30px;
+	font-family: "Times New Roman";
+	padding: 0 15px;
+}
+.selfBrief .hello{
+	font-family: calibri;
+	font-size:120px;
+}
+.selfBrief .interest {
+	background: #004E29;
+	color: #FFF;
 }
 .footer {
-background: black;
-color: white;
-font-family: calibri;
-padding: 40px;
-overflow: hidden;
-zoom: 1;
-height: 180px;
+	background: black;
+	color: white;
+	font-family: calibri;
+	padding: 40px;
+	overflow: hidden;
+	zoom: 1;
+	height: 180px;
 }
 #footerLogo{
-margin-right:20px;
-border: 3px solid white;
-box-shadow: 0 0 5px 1px #09C;
-width:140px;
-height:140px;
+	margin-right:20px;
+	border: 3px solid white;
+	box-shadow: 0 0 5px 1px #09C;
+	width:140px;
+	height:140px;
 }
 .column {
-float: left;
-padding-left: 10px;
-border-left: 1px dotted #424242;
-height: 100%;
-width:220px;
-line-height: 30px;
+	float: left;
+	padding-left: 10px;
+	border-left: 1px dotted #424242;
+	height: 100%;
+	width:220px;
+	line-height: 30px;
 }
 .column p {
-font-size: 20px;
-font-weight: bold;
-color: yellow;
+	font-size: 20px;
+	font-weight: bold;
+	color: yellow;
 }
 .siteTip {
-font-size: 13px;
-border-radius: 5px;
-padding: 4px;
-background: #FF2C2C;
-position:relative;
-margin-left: 10px;
-opacity:0;
+	font-size: 13px;
+	border-radius: 5px;
+	padding: 4px;
+	background: #FF2C2C;
+	position:relative;
+	margin-left: 10px;
+	opacity:0;
 }
 a:hover+.siteTip{
 	animation:showTip .2s ease-in forwards;
@@ -228,16 +254,16 @@ a:hover+.siteTip{
 	to {opacity:1;-o-transform:translate(0,0);}
 }
 .tipArrow {
-border: 6px solid #FF2C2C;
-position: absolute;
-left: -11px;
-top: 5px;
-display: inline-block;
-width: 0;
-height: 0;
-border-left-color: transparent;
-border-bottom-color: transparent;
-border-top-color: transparent;
+	border: 6px solid #FF2C2C;
+	position: absolute;
+	left: -11px;
+	top: 5px;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+	border-top-color: transparent;
 }
 
 /*bike tab css*/
