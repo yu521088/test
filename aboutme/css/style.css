@@ -526,6 +526,7 @@ a:hover+.siteTip{
 #blankTab{
 	background: #C3D6FF;
 	left:300%;
+	background:url('../images/orbea.jpg') 50% 50%;
 }
 
 /*blank2 tab css*/

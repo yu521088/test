@@ -1,4 +1,20 @@
 $(function(){
+'i am test for regex'.replace(/\b(\w+)\b\s+(test)+\b/g,function(m,m1,m2){
+	var a='';
+});
+myLib = function(){
+	this.a =  'test a';
+	this.b =  'test b';
+	this.c = 'test c';
+}
+
+myLib.sub = function(){
+	alert('test');
+}
+myLib.prototype._internal = function(a){
+	alert('internal');
+}
+myLib();
 	var ww = $(window).width(),
 	mLeft = (ww-960)>0?(ww-960)/2:0;
 	$('#bikeSlide').stellar();
