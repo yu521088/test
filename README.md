@@ -39,4 +39,4 @@ I like Nike's slogan:
 - [ ] add image(Format: `![Alt Text](url here)`) and links(Format: `[Link Text](url here)`):
 - [ ] @yu521088
 - [x] code style
-- [x] h1 - h6 headings
+- [ ] h1 - h6 headings
